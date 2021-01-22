@@ -1,6 +1,7 @@
+// https://github.com/Maaazhar/Assignment-M3
 
 
-//1. Kilometer To Meter Converter.
+//1. Kilometer To Meter Converter. (START)
 function kilometerToMeter (kilometer) 
 {
     if (kilometer <= 0) // warning part
@@ -22,8 +23,12 @@ function kilometerToMeter (kilometer)
 console.log(kilometerToMeter(-100)); // false input sample
 console.log(kilometerToMeter(0)); // false input sample
 console.log(kilometerToMeter(50)); // right input sample
+//1. Kilometer To Meter Converter. (END)
 
-// 2. Budget Calculator
+
+
+
+// 2. Budget Calculator. (START)
 function budgetCalculator (watch,mobile,laptop) 
 {
     if ((watch == 0 && mobile == 0 && laptop == 0) || (watch < 0 || mobile < 0 || laptop < 0)) // warning part
@@ -47,12 +52,14 @@ console.log(budgetCalculator(-10,10,10)); // false input sample
 console.log(budgetCalculator(50,-20,10)); // false input sample
 console.log(budgetCalculator(2,2,-10)); // false input sample
 console.log(budgetCalculator(0,0,0)); // false input sample
-console.log(budgetCalculator(0,10,10)); // right input sample
-console.log(budgetCalculator(10,0,10)); // right input sample
-console.log(budgetCalculator(10,10,0)); // right input sample
+console.log(budgetCalculator(0,10,10)); // right input sample without watch
+console.log(budgetCalculator(10,0,10)); // right input sample without mobile
+console.log(budgetCalculator(10,10,0)); // right input sample  without laptop
 console.log(budgetCalculator(10,10,20)); // right input sample
+// 2. Budget Calculator. (END)
 
-// 3. Hotel Cost Calculator
+
+// 3. Hotel Cost Calculator. (START)
 function hotelCost (numberOfDays) 
 {
     if (numberOfDays <= 0) // warning part
@@ -86,8 +93,10 @@ console.log(hotelCost(0)); // false input sample
 console.log(hotelCost(5)); // right input sample within 10 days
 console.log(hotelCost(15)); // right input sample within 20 days
 console.log(hotelCost(25)); // right input sample more than 20 days
+// 3. Hotel Cost Calculator. (END)
 
-// 4. Mega Friends Name Finder
+
+// 4. Mega Friends Name Finder. (START)
 function megaFriend (friendsName) 
 {
     var longestName = " ";
@@ -118,3 +127,4 @@ console.log(megaFriend("alom")); // false input sample not an array
 console.log(megaFriend([" "])); // false input sample no name
 console.log(megaFriend(["alom"])); // false input sample 1 name
 console.log(megaFriend(["alu", "aloo", "aaloo", "kaaloo"])); // right input sample
+// 4. Mega Friends Name Finder. (END)
